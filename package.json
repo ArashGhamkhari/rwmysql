@@ -1,6 +1,6 @@
 {
   "name": "rwmysql",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "description": "A read and write approach in the MySQL driver with the reconnect and query retry on error features.",
   "keywords": [

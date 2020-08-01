@@ -10,6 +10,6 @@ interface rwmysql {
   getConnection(): Promise<PoolConnection>
 }
 
-declare function RWMysql(pool: Pool, reconnect: number | null, queryRetry: number | null): rwmysql
+declare function RWMysql(pool: Pool, reconnect?: number | null, queryRetry?: number | null): rwmysql
 
 export = RWMysql
