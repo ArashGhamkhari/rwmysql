@@ -1,6 +1,6 @@
 {
   "name": "rwmysql",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "description": "A read and write approach in the MySQL driver with the reconnect and query retry on error features.",
   "keywords": [
@@ -21,7 +21,7 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ArashGhamkhari/mysqlrw.git"
+    "url": "git+https://github.com/ArashGhamkhari/rwmysql.git"
   },
   "bugs": {
     "url": "https://github.com/ArashGhamkhari/rwmysql/issues"
