@@ -1,6 +1,8 @@
 import {Pool, PoolConnection} from "mysql";
 
-interface rwmysql {
+export declare class RWMysql {
+  constructor(pool: Pool, reconnect?: number, queryRetry?: number)
+
   read(sql: string, params: Array<any>): Promise<Array<Object>>
 
   write(sql: string, params: Array<any>): Promise<{ effectedRows: number, changedRows: number, insertId: number }>
@@ -9,7 +11,3 @@ interface rwmysql {
 
   getConnection(): Promise<PoolConnection>
 }
-
-declare function RWMysql(pool: Pool, reconnect?: number | null, queryRetry?: number | null): rwmysql
-
-export = RWMysql
